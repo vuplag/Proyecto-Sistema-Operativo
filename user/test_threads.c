@@ -5,27 +5,27 @@
 void thread_a(void) {
   for (int i = 0; i < 5; i++) {
     printf("Hebra A: iteracion %d\n", i);
+    printf("SO \n");
     thread_yield();
   }
-  printf("Hebra A: terminada\n");
   thread_exit();
 }
 
 void thread_b(void) {
   for (int i = 0; i < 5; i++) {
     printf("Hebra B: iteracion %d\n", i);
+    printf("es la \n");
     thread_yield();
   }
-  printf("Hebra B: terminada\n");
   thread_exit();
 }
 
 void thread_c(void) {
   for (int i = 0; i < 5; i++) {
     printf("Hebra C: iteracion %d\n", i);
+    printf("cumbia\n");
     thread_yield();
   }
-  printf("Hebra C: terminada\n");
   thread_exit();
 }
 
